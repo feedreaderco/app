@@ -8,6 +8,7 @@ import {
   WebView,
   View
 } from 'react-native';
+import ShareExtension from 'react-native-share-extension';
 
 export default class FeedReader extends Component {
   render() {
@@ -25,4 +26,27 @@ export default class FeedReader extends Component {
   }
 }
 
+class FeedReaderShareExtension extends Component {
+  async getData(){
+    try {
+        const data = await ShareExtension.data();
+        return data;
+    }
+    catch(e) {
+        console.log('caught error', e);
+        // Handle exceptions
+    }
+  }
+
+  render() {
+    //const { type, value } = getData();
+    return (
+      <View>
+        <Text>Hi</Text>
+      </View>
+    );
+  }
+}
+
 AppRegistry.registerComponent('FeedReader', () => FeedReader);
+AppRegistry.registerComponent('ShareExtension', () => FeedReaderShareExtension);

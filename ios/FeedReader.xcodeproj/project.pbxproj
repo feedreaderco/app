@@ -22,6 +22,21 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		25DF41F21E223FE300602BA2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25DF41F01E223FE300602BA2 /* MainInterface.storyboard */; };
+		25DF41F61E223FE300602BA2 /* FeedReader Share Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 25DF41EB1E223FE300602BA2 /* FeedReader Share Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		25DF41FE1E22405B00602BA2 /* ShareExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DF41FD1E22405B00602BA2 /* ShareExtension.m */; };
+		25DF42211E22434200602BA2 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
+		25DF42221E22434200602BA2 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		25DF42231E22434200602BA2 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
+		25DF42241E22434200602BA2 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
+		25DF42251E22434200602BA2 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
+		25DF42261E22434200602BA2 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
+		25DF42271E22434200602BA2 /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
+		25DF42281E22434200602BA2 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		25DF42291E22434200602BA2 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
+		25DF422A1E22434200602BA2 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
+		25DF422B1E22434200602BA2 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		25DF422C1E22434200602BA2 /* libReactNativeShareExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DF42061E2240EB00602BA2 /* libReactNativeShareExtension.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 /* End PBXBuildFile section */
@@ -89,6 +104,20 @@
 			proxyType = 2;
 			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
 			remoteInfo = React;
+		};
+		25DF41F41E223FE300602BA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25DF41EA1E223FE300602BA2;
+			remoteInfo = "FeedReader Share Extension";
+		};
+		25DF42051E2240EB00602BA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25DF42011E2240EB00602BA2 /* ReactNativeShareExtension.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 41B5DE301D0B505800949BD5;
+			remoteInfo = ReactNativeShareExtension;
 		};
 		3DAD3E831DF850E9000B6D8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -211,6 +240,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		25DF41FA1E223FE300602BA2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				25DF41F61E223FE300602BA2 /* FeedReader Share Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
@@ -231,6 +274,11 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FeedReader/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FeedReader/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		25DF41EB1E223FE300602BA2 /* FeedReader Share Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FeedReader Share Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25DF41F11E223FE300602BA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		25DF41F31E223FE300602BA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25DF41FD1E22405B00602BA2 /* ShareExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareExtension.m; sourceTree = "<group>"; };
+		25DF42011E2240EB00602BA2 /* ReactNativeShareExtension.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeShareExtension.xcodeproj; path = "../node_modules/react-native-share-extension/ios/ReactNativeShareExtension.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
@@ -260,6 +308,25 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25DF41E81E223FE300602BA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25DF42211E22434200602BA2 /* libRCTActionSheet.a in Frameworks */,
+				25DF42221E22434200602BA2 /* libRCTAnimation.a in Frameworks */,
+				25DF42231E22434200602BA2 /* libRCTGeolocation.a in Frameworks */,
+				25DF42241E22434200602BA2 /* libRCTImage.a in Frameworks */,
+				25DF42251E22434200602BA2 /* libRCTLinking.a in Frameworks */,
+				25DF42261E22434200602BA2 /* libRCTNetwork.a in Frameworks */,
+				25DF42271E22434200602BA2 /* libRCTSettings.a in Frameworks */,
+				25DF42281E22434200602BA2 /* libRCTText.a in Frameworks */,
+				25DF42291E22434200602BA2 /* libRCTVibration.a in Frameworks */,
+				25DF422A1E22434200602BA2 /* libRCTWebSocket.a in Frameworks */,
+				25DF422B1E22434200602BA2 /* libReact.a in Frameworks */,
+				25DF422C1E22434200602BA2 /* libReactNativeShareExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +439,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		25DF41EC1E223FE300602BA2 /* FeedReader Share Extension */ = {
+			isa = PBXGroup;
+			children = (
+				25DF41F01E223FE300602BA2 /* MainInterface.storyboard */,
+				25DF41F31E223FE300602BA2 /* Info.plist */,
+				25DF41FD1E22405B00602BA2 /* ShareExtension.m */,
+			);
+			path = "FeedReader Share Extension";
+			sourceTree = "<group>";
+		};
+		25DF42021E2240EB00602BA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25DF42061E2240EB00602BA2 /* libReactNativeShareExtension.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,6 +478,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				25DF42011E2240EB00602BA2 /* ReactNativeShareExtension.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -423,6 +509,7 @@
 				13B07FAE1A68108700A75B9A /* FeedReader */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* FeedReaderTests */,
+				25DF41EC1E223FE300602BA2 /* FeedReader Share Extension */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 			);
 			indentWidth = 2;
@@ -434,6 +521,7 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* FeedReader.app */,
 				00E356EE1AD99517003FC87E /* FeedReaderTests.xctest */,
+				25DF41EB1E223FE300602BA2 /* FeedReader Share Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -467,15 +555,35 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				25DF41FA1E223FE300602BA2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				25DF41F51E223FE300602BA2 /* PBXTargetDependency */,
 			);
 			name = FeedReader;
 			productName = "Hello World";
 			productReference = 13B07F961A680F5B00A75B9A /* FeedReader.app */;
 			productType = "com.apple.product-type.application";
+		};
+		25DF41EA1E223FE300602BA2 /* FeedReader Share Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25DF41F71E223FE300602BA2 /* Build configuration list for PBXNativeTarget "FeedReader Share Extension" */;
+			buildPhases = (
+				25DF41E71E223FE300602BA2 /* Sources */,
+				25DF41E81E223FE300602BA2 /* Frameworks */,
+				25DF41E91E223FE300602BA2 /* Resources */,
+				25DF422D1E23678200602BA2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FeedReader Share Extension";
+			productName = "FeedReader Share Extension";
+			productReference = 25DF41EB1E223FE300602BA2 /* FeedReader Share Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -484,7 +592,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = Facebook;
+				ORGANIZATIONNAME = FeedReader;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -493,6 +601,11 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = 5C79KQUVVH;
+					};
+					25DF41EA1E223FE300602BA2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5C79KQUVVH;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -552,11 +665,16 @@
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
+				{
+					ProductGroup = 25DF42021E2240EB00602BA2 /* Products */;
+					ProjectRef = 25DF42011E2240EB00602BA2 /* ReactNativeShareExtension.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* FeedReader */,
 				00E356ED1AD99517003FC87E /* FeedReaderTests */,
+				25DF41EA1E223FE300602BA2 /* FeedReader Share Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -616,6 +734,13 @@
 			fileType = archive.ar;
 			path = libReact.a;
 			remoteRef = 146834031AC3E56700842450 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		25DF42061E2240EB00602BA2 /* libReactNativeShareExtension.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReactNativeShareExtension.a;
+			remoteRef = 25DF42051E2240EB00602BA2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */ = {
@@ -756,6 +881,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		25DF41E91E223FE300602BA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25DF41F21E223FE300602BA2 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -767,6 +900,19 @@
 			inputPaths = (
 			);
 			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/packager/react-native-xcode.sh";
+		};
+		25DF422D1E23678200602BA2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -793,6 +939,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		25DF41E71E223FE300602BA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25DF41FE1E22405B00602BA2 /* ShareExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -800,6 +954,11 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* FeedReader */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		25DF41F51E223FE300602BA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25DF41EA1E223FE300602BA2 /* FeedReader Share Extension */;
+			targetProxy = 25DF41F41E223FE300602BA2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -811,6 +970,14 @@
 			);
 			name = LaunchScreen.xib;
 			path = FeedReader;
+			sourceTree = "<group>";
+		};
+		25DF41F01E223FE300602BA2 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25DF41F11E223FE300602BA2 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -883,6 +1050,56 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.feedreader;
 				PRODUCT_NAME = FeedReader;
 				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		25DF41F81E223FE300602BA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5C79KQUVVH;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../node_modules/react-native-share-extension/ios/**";
+				INFOPLIST_FILE = "FeedReader Share Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.feedreader.FeedReader-Share-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		25DF41F91E223FE300602BA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5C79KQUVVH;
+				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../node_modules/react-native-share-extension/ios/**";
+				INFOPLIST_FILE = "FeedReader Share Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.feedreader.FeedReader-Share-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -982,6 +1199,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		25DF41F71E223FE300602BA2 /* Build configuration list for PBXNativeTarget "FeedReader Share Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25DF41F81E223FE300602BA2 /* Debug */,
+				25DF41F91E223FE300602BA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "FeedReader" */ = {
 			isa = XCConfigurationList;

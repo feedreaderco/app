@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
   AppRegistry,
   Dimensions,
+  Linking,
   TabBarIOS,
   Text,
   StyleSheet,
@@ -11,6 +12,18 @@ import {
 import ShareExtension from 'react-native-share-extension';
 
 export default class FeedReader extends Component {
+  componentDidMount() {
+    Linking.addEventListener('url', this._handleOpenURL);
+  }
+
+  componentWillUnmount() {
+    Linking.removeEventListener('url', this._handleOpenURL);
+  }
+
+  _handleOpenURL(event) {
+    console.log(event.url);
+  }
+
   render() {
     const uri = 'https://feedreader.co';
     const {height, width} = Dimensions.get('window');

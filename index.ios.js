@@ -26,11 +26,13 @@ export default class FeedReader extends Component {
 
   render() {
     const uri = 'https://feedreader.co';
-    const {height, width} = Dimensions.get('window');
+    const { height, width } = Dimensions.get('window');
     console.log(uri, height, width);
     return (
       <View style={{ flex: 1 }}>
-        <WebView source={{ uri }} style={{ width, height }}/>
+        <View>
+          <WebView source={{ uri }} style={{ flex: 1, height, width }}/>
+        </View>
         <TabBarIOS>
           <TabBarIOS.Item title={'\u2606'} />
         </TabBarIOS>

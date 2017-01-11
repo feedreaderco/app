@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import {
   Dimensions,
-  Linking,
   Text,
   StyleSheet,
   WebView,
@@ -10,22 +9,21 @@ import {
 import BottomToolbar from 'react-native-bottom-toolbar';
 
 export default class App extends Component {
-  componentDidMount() {
-    Linking.addEventListener('url', this._handleOpenURL);
+  static propTypes = {
+    title: PropTypes.string.isRequired,
+    navigator: PropTypes.object.isRequired,
   }
 
-  componentWillUnmount() {
-    Linking.removeEventListener('url', this._handleOpenURL);
-  }
-
-  _handleOpenURL(event) {
-    console.log(event.url);
+  _onForward = () => {
+    this.props.navigator.push({
+      title: 'Scene ' + nextIndex,
+    });
   }
 
   render() {
     const uri = 'https://feedreader.co';
     const { height, width } = Dimensions.get('window');
-    console.log(uri, height, width);
+    console.log(uri, height, width, this.props.title);
     return (
       <View style={{ flex: 1 }}>
         <View style={{ flex: 1 }}>

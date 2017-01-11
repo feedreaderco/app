@@ -10,6 +10,7 @@ import {
   View
 } from 'react-native';
 import ShareExtension from 'react-native-share-extension';
+import BottomToolbar from 'react-native-bottom-toolbar';
 
 export default class FeedReader extends Component {
   componentDidMount() {
@@ -30,12 +31,17 @@ export default class FeedReader extends Component {
     console.log(uri, height, width);
     return (
       <View style={{ flex: 1 }}>
-        <View>
+        <View style={{ flex: 1 }}>
           <WebView source={{ uri }} style={{ flex: 1, height, width }}/>
         </View>
-        <TabBarIOS>
-          <TabBarIOS.Item title={'\u2606'} />
-        </TabBarIOS>
+        <BottomToolbar actions={[
+          // note the extra spaces needed for perfect alignment
+          { title: 'Mark As Read', iconName: 'ios-archive-outline' },
+          { title: 'Read Later', iconName: 'ios-glasses-outline' },
+          { title: 'Share', iconName: 'ios-share-outline' },
+          { title: 'Star', iconName: 'ios-star-outline' },
+          { title: 'Label', iconName: 'ios-bookmarks-outline' },
+        ]} />
       </View>
     );
   }

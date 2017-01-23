@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import { Settings } from 'react-native';
 import ShareExtension from 'react-native-share-extension';
+import Login from './components/Login';
+import Folders from './components/Folders';
 
 export default class FeedReaderShareExtension extends Component {
   async getData(){
@@ -14,11 +17,9 @@ export default class FeedReaderShareExtension extends Component {
   }
 
   render() {
-    //const { type, value } = getData();
-    return (
-      <View>
-        <Text>Hi</Text>
-      </View>
-    );
+    if (!Settings.get('password')) {
+      return <Login />;
+    }
+    return <Folders />;
   }
 }

@@ -24,10 +24,12 @@ export default class FeedReader extends Component {
     return (
       <NavigatorIOS
         style={{ flex: 1 }}
+        translucent={true}
         initialRoute={{
           component: App,
           title: 'Unread Articles',
-          passProps: { title: 'Unread Articles' }
+          leftButtonTitle: 'Feeds',
+          passProps: { title: 'Unread Articles' },
         }}
       />
     );

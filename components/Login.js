@@ -43,7 +43,7 @@ export default class Login extends Component {
             placeholder="Username"
             onChangeText={(text) => this.updateSettingsState('username', text)}
             value={this.state.settings.username}
-            style={{flex: 1, borderColor: }} />
+            style={{flex: 1}} />
           <TextInput
             placeholder="Password"
             onChangeText={(text) => this.updateSettingsState('password', text)}

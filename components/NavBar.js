@@ -11,8 +11,8 @@ export default ({ onChange }) => <View
     paddingBottom: 10,
   }}>
   <SegmentedControlIOS
-    values={['Unread', 'Favorites', 'Reading List']}
-    selectedIndex={0}
+    values={['Favorites', 'Unread', 'Reading List']}
+    selectedIndex={1}
     onChange={(event) => {
       onChange(event.nativeEvent.selectedSegmentIndex);
     }}

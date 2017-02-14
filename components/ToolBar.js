@@ -2,7 +2,7 @@ import React from 'react';
 import BottomToolbar from 'react-native-bottom-toolbar';
 
 export default () => <BottomToolbar actions={[
-  { title: 'Mark As Read', iconName: 'ios-archive-outline' },
+  { title: 'Add to Favorites', iconName: 'ios-heart-outline' },
   { title: 'Share', iconName: 'ios-share-outline' },
-  { title: 'Star', iconName: 'ios-star-outline' },
+  { title: 'Read Later', iconName: 'ios-glasses-outline' },
 ]} />;

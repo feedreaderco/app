@@ -4,29 +4,41 @@ import {
   KeyboardAvoidingView,
   Modal,
   Settings,
-  TextInput
+  Text,
 } from 'react-native';
+import TextInput from './TextInput';
+import Heading from './Heading';
+import Logo from './Logo';
+import api from '../api';
 
 export default class Login extends Component {
   state = {
     modalOpen: true,
+    error: '',
     settings: {
       username: '',
-      password: ''
+      password: '',
+      token: '',
     }
   };
 
-  login() {
-    Settings.set(this.state.settings);
-    this.setState({modalOpen: false});
-  }
+  login = () => {
+    const { username, password } = this.state.settings;
+    api(username).user.tokens.create(password).then(({ token }) => {
+      this.setState({ settings: { username, password, token } });
+      Settings.set(this.state.settings);
+      this.setState({ modalOpen: false });
+    })
+    .catch((error) => {
+      this.setState({ error });
+    });
+  };
 
-  updateSettingsState(key, value) {
+  updateSettingsState = (key, value) => {
     const settings = this.state.settings;
-    console.log(settings);
     settings[key] = value;
     this.setState(settings);
-  }
+  };
 
   render() {
     return (
@@ -37,18 +49,21 @@ export default class Login extends Component {
             flex: 1,
             flexDirection: 'column',
             justifyContent: 'center',
-            alignItems: 'center'
+            padding: 20,
           }} >
+          <Logo /><Heading text="Welcome!"/>
+          <Text>{this.state.error}</Text>
           <TextInput 
             placeholder="Username"
+            keyboardType="email-address"
             onChangeText={(text) => this.updateSettingsState('username', text)}
-            value={this.state.settings.username}
-            style={{flex: 1}} />
+            value={this.state.settings.username} />
           <TextInput
             placeholder="Password"
+            keyboardType="default"
+            secureTextEntry={true}
             onChangeText={(text) => this.updateSettingsState('password', text)}
-            value={this.state.settings.password}
-            style={{flex: 1}} />
+            value={this.state.settings.password} />
           <Button title="Login" onPress={this.login} />
         </KeyboardAvoidingView>
       </Modal>

@@ -4,6 +4,8 @@ import {
   View
 } from 'react-native';
 
+const values = ['Favorites', 'Unread', 'Reading List'];
+
 export default ({ onChange }) => <View
   style={{
     paddingTop: 40,
@@ -11,10 +13,10 @@ export default ({ onChange }) => <View
     paddingBottom: 10,
   }}>
   <SegmentedControlIOS
-    values={['Favorites', 'Unread', 'Reading List']}
+    values={values}
     selectedIndex={1}
     onChange={(event) => {
-      onChange(event.nativeEvent.selectedSegmentIndex);
+      onChange(values[event.nativeEvent.selectedSegmentIndex]);
     }}
   />
 </View>;

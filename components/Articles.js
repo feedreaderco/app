@@ -12,6 +12,7 @@ import api from '../api';
 export default class Articles extends Component {
   constructor(props) {
     super(props);
+    this.state = {};
     this.updateState = this.updateState.bind(this);
   }
 
@@ -34,7 +35,7 @@ export default class Articles extends Component {
   }
 
   render() {
-    if (!this.state) return <ActivityIndicator />;
+    if (!this.state.dataSource) return <ActivityIndicator />;
     return <View>
       <Text>{this.state.message}</Text>
       <ListView

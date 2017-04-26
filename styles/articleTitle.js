@@ -3,7 +3,8 @@ import {
   fontFamily,
   linkColor,
   fontSize,
-  lineHeight
+  lineHeight,
+  em,
 } from './index.js';
 
 export default `
@@ -15,15 +16,7 @@ export default `
   padding: 0;
   padding-left: 20;
   padding-right: 20;
-  padding-bottom: 0.2em;
+  padding-bottom: ${em(0.2)};
   margin: 0;
-  margin-top: 0.4em;
-  margin-before: 0.67em;
-  margin-after: 0.67em;
-  margin-start: 0px;
-  margin-end: 0px;
-  word-wrap: break-word;
-  text-rendering: optimizeLegibility;
-  overflow-x: auto;
-  display: block;
+  margin-top: ${em(0.4)};
 `;

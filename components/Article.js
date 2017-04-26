@@ -9,9 +9,7 @@ import FeedTitle from './FeedTitle.js';
 import ArticleBody from './ArticleBody.js';
 
 export default class Article extends Component {
-  state = {
-    message: 'initiated state'
-  };
+  state = {};
 
   componentWillMount () {
     const uri = `https://api.feedreader.co/v1/articles/${this.props.id}`;

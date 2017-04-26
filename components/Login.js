@@ -5,8 +5,8 @@ import {
   Modal,
   Settings,
   Text,
+  TextInput,
 } from 'react-native';
-import TextInput from './TextInput';
 import Heading from './Heading';
 import Logo from './Logo';
 import api from '../api';
@@ -55,15 +55,20 @@ export default class Login extends Component {
           <Text>{this.state.error}</Text>
           <TextInput 
             placeholder="Username"
-            keyboardType="email-address"
             onChangeText={(text) => this.updateSettingsState('username', text)}
-            value={this.state.settings.username} />
+            autoCorrect={false}
+            autoFocus={true}
+            autoCapitalize="none"
+            value={this.state.settings.username}
+            style={{flex: 1}}
+          />
           <TextInput
             placeholder="Password"
-            keyboardType="default"
             secureTextEntry={true}
             onChangeText={(text) => this.updateSettingsState('password', text)}
-            value={this.state.settings.password} />
+            value={this.state.settings.password}
+            style={{flex: 1}}
+          />
           <Button title="Login" onPress={this.login} />
         </KeyboardAvoidingView>
       </Modal>

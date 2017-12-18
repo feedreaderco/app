@@ -5,4 +5,5 @@ export default ({ id }) => <WebView
   source={{
     uri: `https://feedreader.co/articles/${id}/body`
   }}
+  startInLoadingState={true}
 />;
